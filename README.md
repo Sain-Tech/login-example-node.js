@@ -25,3 +25,21 @@ $ npm install
 $ npm install express-session --save
 $ npm install sync-mysql --save
 ```
+
+회원가입 사용자 정보를 위한 데이터베이스 생성
+
+```console
+mysql> CREATE DATABASE IF NOT EXISTS userInfo CHARACTER SET utf8 COLLATE utf8_general_ci;
+```
+
+routes/index.js에 MySQL 비밀번호 세팅
+
+```
+var connection = {
+    host: 'localhost',
+    port: 3306,
+    user: 'root',
+    password: '비밀번호',
+    database: 'userInfo'
+}
+```
