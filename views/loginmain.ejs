@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <title><%= title %></title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/loginex.css" />
+</head>
+<body>
+    <div class="c_core">
+        <div class="c_div_secondary">
+            <form action="/signin" method="POST">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                            <div class="c_div_input">
+                                <input class="c_input" id="input_id" type="text" name="id" placeholder="ID" tabindex="1">
+                                <input class="c_input" id="input_passwd" type="password" name="passwd" placeholder="PASSWORD" tabindex="2">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <button class="c_btn_login" type="submit" id="btn_login" tabindex="3">Sign in</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <a href="/signup" class="c_link_signup" tabindex="4">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

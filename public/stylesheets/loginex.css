@@ -1,0 +1,114 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: table;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('/images/background_sample.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.c_core {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c_div_secondary {
+  width: 320px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  width: 100%;
+}
+
+.c_div_input {
+  display: flex;
+  flex-direction: column;
+  margin-top: -4px;
+}
+
+.c_input {
+  padding: 0 4px 0 4px;
+  margin-top: 4px;
+  height: 36px;
+}
+
+.c_btn_login {
+  width: 100%;
+  height: 100%;
+}
+
+.c_btn_signup {
+  width: 100%;
+  height: 36px;
+  
+}
+
+.c_link_signup {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px)  {
+  .col-md-4, .col-lg-4, .col-md-6, .col-lg-6, .col-md-8, .col-lg-8, .col-md-12, .col-lg-12 {
+    padding: 2px !important;
+  }
+
+  .c_div_input {
+    margin-top: -8px;
+  }
+
+  .c_input {
+    margin-top: 8px !important;
+  }
+
+  .c_btn_login {
+    margin-left: 2px !important;
+  }
+
+  .c_btn_signup {
+    margin-top: 8px !important;
+  }
+}
+
+@media only screen and (max-width: 767px)  {
+  .c_div_input {
+    margin-top: -8px;
+  }
+
+  .c_input {
+    margin-top: 8px !important;
+  }
+
+  .c_btn_login {
+    margin-top: 16px !important;
+  }
+
+  .marginer0 {
+    margin-top: 8px !important;
+  }
+
+  .c_btn_signup {
+    margin-top: 8px !important;
+  }
+
+  .c_link_signup {
+    margin-top: 20px !important;
+  }
+}
